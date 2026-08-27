@@ -1,37 +1,53 @@
-# Security Checker
+ # 🛡️ Security Checker
 
-Security Checker is a browser-based tool that checks source code for
-patterns that may indicate accidentally exposed secrets.
+Security Checker is a small browser-based project I built as a hobby while exploring programming and basic cybersecurity concepts.
 
-## Features
+It checks pasted source code for patterns that may indicate accidentally exposed secrets.
 
-- API key detection
-- Password detection
-- Access token detection
-- Private key detection
-- Database credential detection
-- Line-number reporting
-- Security remediation advice
-- Client-side scanning
+## 🔍 What it checks
 
-## Privacy
+The project looks for patterns that could indicate:
 
-The MVP performs scanning directly in the browser.
+* API keys
+* Passwords
+* Access tokens
+* Private keys
+* Database credentials
 
-Source code is not sent to a server by this version.
+## 💡 What I wanted to learn
 
-## Important
+I built this project to explore:
 
-This tool detects suspicious patterns. A finding does not necessarily mean
-that a value is a valid or active credential.
+* JavaScript pattern matching
+* Basic security concepts
+* User input handling
+* Building browser-based tools
+* Thinking about false positives and security warnings
 
-If a real credential has been exposed publicly, revoke or rotate it
-immediately.
+## 🛠️ Technologies
 
-## Run locally
+* HTML
+* CSS
+* JavaScript
 
-Open `index.html` in a browser.
+## 🌐 Live Demo
 
-## License
+https://jbj66ttr.github.io/Security-checker/
 
-MIT
+## ⚠️ Disclaimer
+
+This is a hobby and learning project.
+
+The scanner looks for suspicious patterns and cannot guarantee that a detected value is a real or active credential.
+
+Never publish real API keys, passwords, tokens, or private keys in a public repository.
+
+## 🚀 Future Ideas
+
+Some improvements I may explore in the future:
+
+* More secret-detection patterns
+* Better false-positive handling
+* GitHub repository scanning
+* More detailed security reports
+* GitHub Actions integration
