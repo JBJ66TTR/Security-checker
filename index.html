@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Security Checker</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <main class="container">
+
+    <header>
+      <div class="badge">SECURITY TOOL</div>
+      <h1>Security Checker</h1>
+      <p>
+        Scan your code for accidentally exposed secrets before publishing it.
+      </p>
+    </header>
+
+    <section class="scanner">
+      <label for="code">Paste your code</label>
+
+      <textarea
+        id="code"
+        placeholder='const API_KEY = "your-secret-here";'
+        spellcheck="false"
+      ></textarea>
+
+      <button id="scanButton">
+        Scan Code
+      </button>
+    </section>
+
+    <section id="results" class="results hidden">
+      <h2>Scan Results</h2>
+      <div id="resultList"></div>
+    </section>
+
+    <section class="tips">
+      <h2>Security Tips</h2>
+
+      <div class="tip">
+        <strong>Never commit real secrets</strong>
+        <p>
+          API keys, passwords and private tokens should not be stored directly
+          in source code.
+        </p>
+      </div>
+
+      <div class="tip">
+        <strong>Use environment variables</strong>
+        <p>
+          Store sensitive configuration outside your source code.
+        </p>
+      </div>
+
+      <div class="tip">
+        <strong>Use .gitignore</strong>
+        <p>
+          Keep files such as <code>.env</code> out of your Git repository.
+        </p>
+      </div>
+    </section>
+
+    <footer>
+      Security Checker · Local scanning · No code is uploaded
+    </footer>
+
+  </main>
+
+  <script src="scanner.js"></script>
+</body>
+</html>
