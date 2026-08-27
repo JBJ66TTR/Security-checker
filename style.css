@@ -1,0 +1,158 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #0b1020;
+  color: #f5f7ff;
+}
+
+.container {
+  width: min(900px, 92%);
+  margin: 60px auto;
+}
+
+header {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.badge {
+  display: inline-block;
+  padding: 6px 12px;
+  border: 1px solid #39435f;
+  border-radius: 20px;
+  font-size: 12px;
+  letter-spacing: 1px;
+  color: #9da9c9;
+}
+
+h1 {
+  font-size: 48px;
+  margin: 15px 0 10px;
+}
+
+header p {
+  color: #aeb7cf;
+  font-size: 18px;
+}
+
+.scanner,
+.results,
+.tips {
+  background: #121a2e;
+  border: 1px solid #26304a;
+  border-radius: 14px;
+  padding: 25px;
+  margin-bottom: 25px;
+}
+
+label {
+  display: block;
+  margin-bottom: 12px;
+  font-weight: bold;
+}
+
+textarea {
+  width: 100%;
+  min-height: 300px;
+  resize: vertical;
+  padding: 18px;
+  border-radius: 10px;
+  border: 1px solid #303b58;
+  background: #080d19;
+  color: #e9edff;
+  font-family: monospace;
+  font-size: 14px;
+  outline: none;
+}
+
+textarea:focus {
+  border-color: #667eea;
+}
+
+button {
+  margin-top: 15px;
+  padding: 13px 22px;
+  border: 0;
+  border-radius: 8px;
+  background: #667eea;
+  color: white;
+  font-size: 15px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+button:hover {
+  opacity: 0.9;
+}
+
+.result {
+  padding: 18px;
+  border-radius: 10px;
+  margin-top: 15px;
+  background: #1b243b;
+  border-left: 4px solid;
+}
+
+.result.high {
+  border-color: #ff6b6b;
+}
+
+.result.medium {
+  border-color: #ffbf69;
+}
+
+.result.info {
+  border-color: #70a1ff;
+}
+
+.result h3 {
+  margin: 0 0 8px;
+}
+
+.result p {
+  color: #b7c0d8;
+  line-height: 1.5;
+}
+
+code {
+  background: #080d19;
+  padding: 3px 6px;
+  border-radius: 4px;
+  font-family: monospace;
+}
+
+.tip {
+  padding: 15px 0;
+  border-bottom: 1px solid #29334d;
+}
+
+.tip:last-child {
+  border-bottom: 0;
+}
+
+.tip p {
+  color: #aeb7cf;
+  line-height: 1.5;
+}
+
+.hidden {
+  display: none;
+}
+
+.success {
+  color: #63e6be;
+  padding: 15px;
+  background: #102b27;
+  border-radius: 8px;
+}
+
+footer {
+  text-align: center;
+  color: #707b96;
+  padding: 30px;
+  font-size: 13px;
+}
